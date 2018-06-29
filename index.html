@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html> <!-- Opening Tag -->
+	<head> <!-- Header Tag -->
+		<title>
+			This is my first website.
+		</title>
+		<style>
+			body {
+				background-color: #66FF66;
+				color: blue;
+
+			}
+			.clear-class {
+				clear: both;
+			}
+			.first-class {
+				height: 400px;
+				background-color: #CCC;
+			}
+			.first-class p {
+				color: white;
+			} 
+			.first-box {
+				height: 200px;
+				width: 200px;
+				background-color: blue;
+				margin:0 auto;
+			}
+			.first-box:hover {
+				background-color: red;
+			}
+			.second-class {
+				background-color: #000;
+			}
+			.second-class p {
+				color: red;
+			}
+			.third-class {
+				background-color: yellow;
+			}
+			.third-class p {
+				color: green;
+			}
+			.d-none {
+				display: none;
+			}
+			nav ul li {
+				display:inline-block;
+				padding: 15px;
+			}
+			nav a img {
+				float: left;
+				}
+		</style>
+
+		<script>
+			function myFunction() {
+				var box = document.querySelector('.first-box');
+				box.classList.remove('d-none');
+
+				var button = document.querySelector('#first-button');
+
+			}
+			function evolution() {
+				var image = document.querySelector('.second-class img');
+				image.src = "https://d.facdn.net/art/lizheru/1454104523/1454104523.lizheru_asriel.png";
+			}
+
+			function deevolve() {
+				var image = document.querySelector('.second-class img');
+				image.src = "https://i.pinimg.com/originals/af/f1/76/aff1764a5eed4d711752b3dce460190d.png";
+			}
+			</script>
+	</head>
+	<header>
+		<nav>
+			<a href= "https://placeholder.com"><img src="http://via.placeholder.com/350x150">
+			</a>
+			<ul>
+				<a href="#">Home</a></1i>
+				<a href="#">Blog</a></1i>
+				<a href="#">Contact Us</a></1i>
+			</ul>
+		</nav>
+	</header>
+	<body>
+	<section class= "clear-class">
+
+		<h1>Hello!</h1>
+		<p style="text-align: center;"> This will be blue </p>
+	</section>
+
+		<section class="first-class">
+			<p>This is my first class. </p>
+		</section>
+
+		<div class="first box d-none"></div>
+	</section>
+
+	<button id="first-button" onclick="myFunction()">Click me!</button>
+	
+	
+
+		<section class="second-class">
+			<p>This is my second class. </p>
+		
+		<img height="635" width="300" src="https://i.pinimg.com/originals/af/f1/76/aff1764a5eed4d711752b3dce460190d.png">
+
+		<button id="second-button" onclick="evolution()">Evolve</button>
+		<button id="third-button" onclick="deevolve()">Deevolve</button>
+		</section>
+		<section class="third-class">
+			<p>This is my third class.</p>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/U-ZmC2h7CRY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</section>
+
+		</body>
+</html> <!-- Closing Tag -->
